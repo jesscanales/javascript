@@ -1,0 +1,13 @@
+//var firstNumber = prompt("Enter a number from 1 to 100");
+//var firstNumberClean = parseInt(firstNumber);
+//console.log(Math.floor((Math.random() * firstNumberClean) + 1));
+
+var input = prompt("Enter a number from 1 to 100")
+var topNumber = parseInt(input);
+var randomNumber = Math.floor(Math.random() * topNumber ) +1;
+var inputTwo = prompt("Enter a number less than your first number");
+var bottomNumber = parseInt(inputTwo);
+
+var message = "<p>" + randomNumber + " is a number between " + bottomNumber + " and " + topNumber + ".</p>";
+
+document.write(message);
