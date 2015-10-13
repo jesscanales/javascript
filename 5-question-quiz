@@ -1,0 +1,29 @@
+var q1 = prompt('Is Austin the capitol of Texas');
+var q2 = prompt('Is Destin the capitol of Vermont');
+var q3 = prompt('Is Omaha the capitol of Nebraska');
+var q4 = prompt('Is Denver the capitol of Colorado');
+var q5 = prompt('Is Kalispell the capitol of Montana');
+var numberCorrect = 0
+
+if ( q1 == 'yes' || q1 == 'y' ){ numberCorrect = numberCorrect + 1
+}
+if ( q2 == 'no' || q2 == 'n' ){ numberCorrect = numberCorrect + 1
+}
+if ( q3 == 'yes' || q3 == 'y' ){ numberCorrect += 1
+}
+if ( q4 == 'yes' || q4 == 'y' ){ numberCorrect = numberCorrect + 1
+}
+if ( q5 == 'no' || q5 == 'n' ){ numberCorrect = numberCorrect + 1
+}
+
+if ( numberCorrect >= 4 ){ document.write( '<p>You got ' + numberCorrect + ' correct. You have earned a gold crown</p>' );
+}
+
+else if ( numberCorrect >= 3 ){document.write( '<p>You got ' + numberCorrect + ' correct. You have earned a silver crown</p>' );
+}
+
+else if ( numberCorrect >= 2 ){document.write( '<p>You got ' + numberCorrect + ' correct. You have earned a bronze crown</p>' );
+}
+
+else {document.write( '<p>You got ' + numberCorrect + ' correct. You have earned no crown</p>' );
+}
