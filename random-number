@@ -11,3 +11,14 @@ var bottomNumber = parseInt(inputTwo);
 var message = "<p>" + randomNumber + " is a number between " + bottomNumber + " and " + topNumber + ".</p>";
 
 document.write(message);
+
+//random number within a range
+
+function randomNumber ( low, high ) {
+  var number = Math.floor(Math.random() * (high - low + 1)) + 1;
+  return number
+}
+
+//alert (randomNumber(2, 6));
+//alert (randomNumber(2, 100));
+//alert (randomNumber(100, 1000));
