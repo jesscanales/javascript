@@ -15,8 +15,7 @@ document.write(message);
 //random number within a range
 
 function randomNumber ( low, high ) {
-  var number = Math.floor(Math.random() * (high - low + 1)) + 1;
-  return number
+  return = Math.floor(Math.random() * (high - low + 1)) + low;
 }
 
 //alert (randomNumber(2, 6));
